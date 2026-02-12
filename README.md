@@ -3,8 +3,7 @@
 A production‑ready Django API that computes **cost‑optimal fuel stops along any U.S. road trip** – given a vehicle range of 500 miles, 10 MPG, and a dataset of 6,700+ real fuel stations.  
 Built for the Spotter backend engineering assessment, this solution focuses on **correctness, performance, spatial intelligence, and explainable algorithmic trade‑offs**.
 
-👉 **[Watch the 5‑minute Loom walkthrough](https://www.loom.com/share/332101ba7e8148b4a4997d219b96824a)**  
-*(replace with actual video link)*
+👉 **[Watch the 5‑minute Loom walkthrough](https://www.loom.com/share/332101ba7e8148b4a4997d219b96824a)**
 
 ---
 
@@ -293,5 +292,3 @@ Includes:
 Built with ❤️ for the Spotter assessment – all requirements satisfied.
 
 ---
-
-**Questions?** Reach out via [LinkedIn](https://linkedin.com/in/koded0214h) or open an issue on GitHub.
