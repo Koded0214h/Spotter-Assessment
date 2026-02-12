@@ -52,8 +52,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    "cors.middleware.CorsMiddleware",
-    "django.contrib.gis",
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -161,6 +160,10 @@ SPECTACULAR_SETTINGS = {
 
 
 # Environment Variables
-REDIS_URL = os.getenv("REDIS_URL")
+REDIS_HOST = os.environ.get("REDIS_HOST", "127.0.0.1")
+REDIS_PORT = int(os.environ.get("REDIS_PORT", 6379))
 
 ROUTING_API_KEY = os.getenv("ROUTING_API_KEY")
+
+GDAL_LIBRARY_PATH = "/usr/local/anaconda3/envs/geo/lib/libgdal.dylib"
+GEOS_LIBRARY_PATH = "/usr/local/anaconda3/envs/geo/lib/libgeos_c.dylib"
